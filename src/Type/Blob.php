@@ -24,4 +24,10 @@ class Blob extends Base{
     public function getValue(){
         return $this->_value;
     }
+
+    public function setBinary($value) {
+    	$this->_binary = $this->_value = $value;
+    	return $this;
+    }
+    
 }
